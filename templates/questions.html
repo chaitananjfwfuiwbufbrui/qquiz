@@ -28,7 +28,7 @@
 
                         <form action="/questions/{{slugs}}/{{nxt}}" method="POST">
                             {% csrf_token %}
-                            <input type="hidden"  value="{{topic}}" name="testname"  id="testname">
+                            <input type="hidden" value="{{topic}}" name="testname" id="testname">
 
                             <div class="d-flex flex-row align-items-center question-title">
                                 <h3 class="text-danger">Q.</h3>
@@ -77,8 +77,8 @@
                         <button class="btn btn-primary border-success align-items-center btn-success"
                             type="submit">Next<i class="fa fa-angle-right ml-2"></i></button>
                         {% else %}
-                        <button class="btn btn-primary d-flex align-items-center btn-primary" type="button"><i
-                                class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;submit
+                        <button class="btn btn-primary d-flex align-items-center btn-primary" type="submit"><i
+                                class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;submit </button>
                             {% endif %}
                             </form>
                     </div>

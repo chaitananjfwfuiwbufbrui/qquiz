@@ -22,5 +22,6 @@ urlpatterns = [
     path('test/', views.tests, name='tests'),
     
     path('questions/<str:slug>/<int:id>', views.questions, name='questions'),
+    path('questions/<str:slug>/<int:id>/results', views.results, name='results'),
 
 ]
